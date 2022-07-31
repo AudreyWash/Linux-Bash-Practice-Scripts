@@ -1,5 +1,6 @@
 #!/bin/bash
 package=htop
+
 sudo apt install $package >> package_install_results.log
 
 if [ $? -eq 0 ]
