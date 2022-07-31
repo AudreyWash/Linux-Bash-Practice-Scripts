@@ -1,5 +1,6 @@
 #!/bin/bash
 command=htop
+
 if command -v $command
 then
     echo "$command is available, let's run it..."
