@@ -2,8 +2,9 @@
 directory=/etc
 if [ -d $directory ]
 then 
+    echo $?
     echo "The directory $directory exists."
-else 
+else
     echo "The directory $directory doesn't exist."
 fi 
 
