@@ -16,5 +16,10 @@ fi
    
 # The contents of the file have been printed into .log file package_install_results.log
 
-#If I type in ls, package_install_results.log will show up as a directory, and if I type in cat package_install_results.log, the installation contents
-will be there. 
+# If I type in ls, package_install_results.log will show up as a directory, and if I type in cat package_install_results.log, the installation contents
+# will be there. 
+
+# The two greater than symbols (>>) append a command/package to a file or creates one if it doesn't exist. (Appends the data in an already existing
+# existing file.)
+
+# .log files are a set of records that Linux maintains for the administrators to keep track of important events.
