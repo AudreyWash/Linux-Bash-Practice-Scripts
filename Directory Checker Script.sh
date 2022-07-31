@@ -8,3 +8,7 @@ else
 fi 
 
 echo "The exit code for this script run is $?"
+
+#Output:
+# The directory /etc exists
+# The exit code for this script run is 0
