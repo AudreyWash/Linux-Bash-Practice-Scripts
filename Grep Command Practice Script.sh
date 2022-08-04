@@ -21,3 +21,4 @@ fi
 # In this script, grep will be used to search the file $release_file (which is an actual file on Linux distributions) and will output whatever line the string
 # requested is on.
 # The script may not run if the Linux distribution is neither Arch or Ubuntu.
+# If either Arch or Ubuntu are found in the release file, the script will ask then ask to update and install pacman on the system.
