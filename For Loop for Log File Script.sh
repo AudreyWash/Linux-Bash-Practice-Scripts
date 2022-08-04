@@ -11,6 +11,6 @@ done
 # The -czvf command is used to compress an entire directory or a single file on Linux. It’ll also compress every other directory inside 
 # a directory you specify–in other words, it works recursively.
 # -c: Create an archive.
--z: Compress the archive with gzip.
--v: Display progress in the terminal while creating the archive, also known as “verbose” mode. The v is always optional in these commands, but it’s helpful.
--f: Allows you to specify the filename of the archive.
+# -z: Compress the archive with gzip.
+# -v: Display progress in the terminal while creating the archive, also known as “verbose” mode. The v is always optional in these commands, but it’s helpful.
+# -f: Allows you to specify the filename of the archive.
