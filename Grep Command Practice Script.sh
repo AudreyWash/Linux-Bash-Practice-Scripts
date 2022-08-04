@@ -14,3 +14,9 @@ then
     sudo apt dist-upgrade
 fi
 
+# Notes:
+
+# Grep is a Linux / Unix command-line tool used to search for a string of characters in a specified file. 
+# The text search pattern is called a regular expression. When it finds a match, it prints the line with the result. 
+# In this script, grep will be used to search the file $release_file (which is an actual file on Linux distributions) and will output whatever line the string
+# requested is on.
