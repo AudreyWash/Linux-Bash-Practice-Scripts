@@ -2,4 +2,4 @@
 
 Notes:
 
-1. <u>NEVER</u> write a script in your personal/home directory.
+1. NEVER write a script in your personal/home directory.
