@@ -4,6 +4,18 @@ do
     tar -czvf $file.tar.gz $file     # We type $ file again in order to archive the file we want.
 done
 
+
+
+# Output Directions:
+
+# Type in:
+# 1. mkdir log files
+# 2. cp /var/log/*.logfiles/
+# 3. ls logfiles/ # (This will list all files that end in .log
+# Run the script: ./myscript.sh
+
+
+
 # Notes:
 # This script checks for any file name that ends in .log. For every file in the logfiles directory that ends in .log will run through this script.
 # The Linux tar command is used to create compressed or uncompressed Archive files and also maintain and modify them. 
