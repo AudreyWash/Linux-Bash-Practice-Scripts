@@ -1,7 +1,7 @@
 #!/bin/bash
 for file in logfiles/*.log
 do
-    tar -czvf $file
+    tar -czvf $file.tar.gz $file     # We type $ file again in order to archive the file we want.
 done
 
 # Notes:
