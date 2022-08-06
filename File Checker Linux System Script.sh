@@ -7,7 +7,7 @@ errorLog=/var/log/updater_errors.log
 if grep -q "Arch" $release_file 
 then
     # The host is based on Arch, run the pacman update command
-    sudo pacman -Syu 1>>$logfile        
+    sudo pacman -Syu 1>>$logfile 2>>$errorlog       
     if [ $? -ne 0 ]          
     then 
         echo "An error occured, please check the $errorlog file."
@@ -30,7 +30,7 @@ fi
 # Line 3: Trying to figure out which distribution of Linux is being run on.
 # Line 4: We are sending the updater messages to updater.log
 # Line 5: We are sending all the updater failures to updater_errors.log.
-# Line 10: Installing pacman manager on filesystem (1 represents standard output and 1>>$logfile means that all standard output will be sent to file $logfile.)
+# Line 10: Installing pacman manager on filesystem (1 represents standard output and 1>>$logfile means that all standard output will be sent to file $logfile, and 2>>$errorlog  means that all standard error will be sent to $errorlog.)
 # Line 11: If the file has been properly installed, then the exit code should be zero.
 # Line 16: Trying to figure out if the Linux distrubution is either Pop OS or Ubuntu.
 # Line 20: Installs updates to packages
