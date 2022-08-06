@@ -17,8 +17,12 @@ if grep -q "Pop" $release_file || grep -q "Ubuntu" $release_file
 then
     # The host is based in Ubuntu
     # Run the apt version of the command
-    sudo apt update                          
-    sudo apt dist-upgrade
+    sudo apt update 1>>$logfile 2>>$errorlog     
+    if [ $? -ne 0 ]
+    then 
+        echo "An error occured, please check the $errorlog file."
+    fi
+    sudo apt dist-upgrade -y 1>>$logfile 2>>$errorlog   
     if [ $? -ne 0 ]
     then 
         echo "An error occured, please check the $errorlog file."
@@ -34,3 +38,12 @@ fi
 # Line 11: If the file has been properly installed, then the exit code should be zero.
 # Line 16: Trying to figure out if the Linux distrubution is either Pop OS or Ubuntu.
 # Line 20: Installs updates to packages
+# Line 25: The "-y" on this line means that the shell will ask you for y/n input so that you can type "y" and run the script.
+
+# Ultimately, the program should only output an exit code and echo back a response and all standard output/error should be sent to a file instead outputted on the screen.
+
+# To run the script, type in /usr/local/bin/update. The shell will output permission denied errors, so switch over to root.
+# Switch over to root: sudo su -  (To exit root, type exit.)
+# The shell still may not output anything, so type in tail -f /var/log/updater.log (The tail -f command watches a text file in real time) 
+
+
