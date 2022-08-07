@@ -4,6 +4,8 @@ release_file=/etc/os-release
 logfile=/var/log/updater.log            
 errorLog=/var/log/updater_errors.log    
 
+
+
 if grep -q "Arch" $release_file 
 then
     # The host is based on Arch, run the pacman update command
