@@ -4,6 +4,7 @@ release_file=/etc/os-release
 logfile=/var/log/updater.log            
 errorLog=/var/log/updater_errors.log
 
+# This is an example of a function
 check_exit_status() {
      if [ $? -ne 0 ]
      then 
