@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 echo "What is your favorite Linux distribution?"
 
 echo "1 - Arch"
