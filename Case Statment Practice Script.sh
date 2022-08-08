@@ -1,6 +1,8 @@
 #!/bin/bash
 
-read finished
+# read finished
+
+finished=0
 
 while [ $finished -ne 1 ]
 do
